@@ -44,14 +44,26 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="sass">
 
-/*#components-layout-demo-fixed .logo {*/
-/*  width: 120px;*/
-/*  height: 31px;*/
-/*  background: rgba(255, 255, 255, 0.2);*/
-/*  margin: 16px 24px 16px 0;*/
-/*  float: left;*/
-/*}*/
-
+.app
+    display: flex
+    height: 100vh
+    flex-direction: column
+    .app-header
+        height: 50px
+    .app-center
+        /*height: calc(100vh - 130px)*/
+        flex: 1
+        .app-center-left
+            width: 200px
+            height: 100%
+            box-sizing: border-box
+            border-right: 1px solid #f2f2f2
+        .app-center-right
+            width: calc(100% - 200px)
+            height: 100%
+    .app-footer
+        height: 80px
+        background: #F6F6F8
 </style>

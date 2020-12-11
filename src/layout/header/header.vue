@@ -1,39 +1,39 @@
 <template>
-    <div class="net-header clearfix">
-        <div class="float-left header-ico">
-            <img src="public/format.ico"/>
-        </div>
-        <div class="float-left margin-left-xs header-title">
-            <span>网易云音乐</span>
-        </div>
-        <div class="float-left page-controller clearfix">
-            <a><i class="iconfont icon-arrow-left-bold"></i></a>
-            <a><i class="iconfont icon-arrow-right-bold"></i></a>
-        </div>
-        <div class="float-left header-searcher">
-            <div class="searcher">
-                <i class="iconfont icon-search"></i>
-                <input type="text" placeholder="搜索" />
+    <div class="net-header flex justify-between align-center">
+        <div class="flex align-center">
+            <div class="header-ico">
+                <img src="public/format.ico"/>
+            </div>
+            <div class="margin-left-xs header-title">
+                <span>网易云音乐</span>
+            </div>
+            <div class="page-controller clearfix">
+                <a><i class="iconfont icon-arrow-left-bold"></i></a>
+                <a><i class="iconfont icon-arrow-right-bold"></i></a>
+            </div>
+            <div class="header-searcher">
+                <div class="searcher">
+                    <i class="iconfont icon-search"></i>
+                    <input type="text" placeholder="搜索" />
+                </div>
             </div>
         </div>
-        <div class="clearfix float-right">
-            <div class="float-left avatar">
 
-            </div>
-            <div class="float-left username">
+        <div class="header-right flex align-center justify-end">
+            <div class="user">
                 <login-page></login-page>
             </div>
-            <div class="float-left vip">
-                开通vip
+            <div class="vip nav-text-white">
+                <a class="nav-a"><small>开通VIP</small></a>
             </div>
-            <div class="float-left setting">
-                <i class="iconfont icon-setting"></i>
+            <div class="setting nav-text-white">
+                <a class="nav-a"><i class="iconfont icon-setting"></i></a>
             </div>
-            <div class="float-left skin">
-                <i class="iconfont icon-skin"></i>
+            <div class="skin nav-text-white">
+                <a class="nav-a"><i class="iconfont icon-skin"></i></a>
             </div>
-            <div class="float-left message">
-                <i class="iconfont icon-email"></i>
+            <div class="message nav-text-white">
+                <a class="nav-a"><i class="iconfont icon-email"></i></a>
             </div>
         </div>
 
@@ -61,6 +61,12 @@
 </script>
 
 <style scoped lang="sass">
+.nav-text-white
+    color: #e2e2e2
+    a
+        color: #e2e2e2
+        &:hover
+            color: #fff
 .net-header
     background: #EC4141
     padding: 10px
@@ -80,6 +86,7 @@
     .header-title
         color: #fff
     .page-controller
+        margin-left: 100px
         & > a
             display: inline-block
             cursor: pointer
@@ -92,6 +99,7 @@
                 color: #ccc
                 margin: 5px
     .header-searcher
+        margin-left: 20px
         .searcher
             border-radius: 22px
             background: #E13E3E
@@ -104,9 +112,14 @@
                 background: transparent
                 color: #fffdef
                 &::placeholder
-                    color: #ccc
+                    color: #E98E6E
                     font-size: 10px
                     line-height: 16px
                 &:focus
                     outline: none
+    .header-right
+        a
+            padding: 5px 10px
+        .vip
+            margin-left: 10px
 </style>

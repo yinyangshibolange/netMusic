@@ -1,5 +1,5 @@
 <template>
-    <div>2</div>
+    <div class="net-footer">2</div>
 </template>
 
 <script>
@@ -8,6 +8,8 @@
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="sass">
+.net-footer
+    background: #F6F6F8
+    border-top: 1px solid #ccc
 </style>
