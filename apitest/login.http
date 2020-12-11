@@ -1,0 +1,6 @@
+GET http://localhost:3000/login?email=1192492051@qq.com&password=wc19940825
+Accept: application/json
+
+###
+GET http://localhost:3000/login/refresh?cookie=NMTID=00OoZv0y-kDavF84UM6vykKWI9Kyf4AAAF2RUG_Nw; Max-Age=315360000; Expires=Sat, 7 Dec 2030 02:08:25 GMT; Path=/;;MUSIC_U=b0790552999db2cc7f3344bf09eecff190737e9479fc7775673163656f0c35b08fca528e7fc5277f60aa2a1d26206ffe; Max-Age=1296000; Expires=Thu, 24 Dec 2020 02:08:25 GMT; Path=/;;__csrf=2f43ee0f4d0ec74d8c692556687f59a2; Max-Age=1296010; Expires=Thu, 24 Dec 2020 02:08:35 GMT; Path=/;;__remember_me=true; Max-Age=1296000; Expires=Thu, 24 Dec 2020 02:08:25 GMT; Path=/;
+Accept: application/json
